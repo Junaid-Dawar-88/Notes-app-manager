@@ -5,7 +5,7 @@ import { useAuth } from "@/context/AuthContext";
 import { Trash2, Edit2 } from "lucide-react";
 
 const NotesData = () => {
-  const { token, user, logout } = useAuth();
+  const { token , logout } = useAuth();
   const [notes, setNotes] = useState<any[]>([]);
  const [update, setUpdate] = useState< any | null>(null);
 
